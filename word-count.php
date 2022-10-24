@@ -59,6 +59,21 @@ function wordcount_reading_time($content){
 }
 add_filter( 'the_content', 'wordcount_reading_time' );
 
+/*
+// Theme - functions.php
+// Header
+function twenty_wordcount_heading($heading){
+	$heading = "Total words";
+	return $heading;
+}
+add_filter( 'wordcount_heading', 'twenty_wordcount_heading' );
+
+// Tag
+function twenty_wordcount_tag($tag){
+	return "h5";
+}
+add_filter( 'wordcount_tag', 'twenty_wordcount_tag');
+*/
 
 
 ?>
